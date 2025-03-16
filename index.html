@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<body>
+<style>
+    button {
+        color:#ff40a8;
+    }    
+</style>    
+<h1>baca dulu petunjuknya yaa</h1>
+<h2>di zoom dulu</h2>
+<ol>
+    <li>liat tulisan halo</li>
+<li>terus di baca yang sebelum di klik</li>
+<li>terus di klik dan liat hasilnya yaaa</li>
+<li>bacanya sambil dengerin sound itu yaa</li>
+</ol>
+<h2>Halo di klik yaa ini</h2>
+<p>sebelum di klik baca bismillah dulu yaa, di bacanya santai aja yaa</p>
+<button onclick="typeWriter()">Coba klik hehehe</button>
+<p id="demo"></p>
+<h2>bacanya sambil dengerin lagu ini yaa</h2>
+<audio controls>
+    <source src="kangen.mp3">
+</audio>
+<p>kalo lebaran cocok lah yah lagu di bawah ini? hehehe</p>
+<audio controls>
+    <source src="eidun.mp3">
+</audio>
+<script>
+    alert('haloo di baca dulu petunjuknya yaa')
+var i = 0;
+var txt = 'haloo zahran, sinarr, silvii, pada sehat kalian? Alhamdulillah?? Alhamdulillah atuh cuman mau nyampain kalo aku ada salah mohon maaf yaa, mungkin gara gara ada saya grup ini sepi mulu? maafin yaa hihihi owh yaa, sehat sehat pokonya kalian, makasih udah jadi temen abi makasih banget, abi ga akan kemana mana ada ko di dunia ini hehehe kalian sehat sehat yaa, berhubungan sekarang bulan Ramadhan jadi abi mau ucapin minal aidzin wal Faidzin yaa, mau minta maaf ke kalian soal kita mau postud atau kesalahannya yang lain juga, maaf yaa, have fun kalian hehehe';
+var speed = 75;
+
+function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("demo").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}
+</script>
+
+</body>
+</html>
